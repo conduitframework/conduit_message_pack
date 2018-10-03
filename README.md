@@ -1,11 +1,10 @@
 # ConduitMessagePack
 
-**TODO: Add description**
+Add a functionality to parse and format in message pack to Conduit Framework.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `conduit_message_pack` to your list of dependencies in `mix.exs`:
+This package can be installed by adding `conduit_message_pack` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -15,7 +14,15 @@ def deps do
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/conduit_message_pack](https://hexdocs.pm/conduit_message_pack).
+## Add Message Pack Content Type To Conduit Configuration
 
+Add config below to your config file.
+
+
+```elixir
+# config/config.exs
+
+config :conduit, Conduit.ContentType, [
+    {"application/msgpack", ConduitMessagePack}, 
+  ]
+```
