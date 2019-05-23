@@ -31,7 +31,7 @@ defmodule ConduitMessagePack.MixProject do
     [
       {:conduit, "~> 0.8"},
       {:msgpax, "~> 2.0"},
-      {:ex_doc, "~> 0.18.0", only: :dev}
+      {:ex_doc, "~> 0.20.2", only: :dev}
     ]
   end
 
